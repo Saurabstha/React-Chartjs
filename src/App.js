@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import DankMemes from './components/Dankmemes';
 import Features from './components/Features';
 import Pricing from './components/Pricing';
+import TablePagination from './components/TablePagination';
 
 import {
   BrowserRouter as Router,
@@ -19,8 +20,6 @@ function App() {
       
     <Router>
       <Navbar />
-        
-
       <Switch>
         <Route path="/features" component={Features}>
           <Features />
@@ -30,6 +29,9 @@ function App() {
         </Route>
         <Route path="/dankMemes" component={DankMemes}>
           <DankMemes />
+        </Route>
+        <Route path="/table-pagination" component={TablePagination}>
+          <TablePagination />
         </Route>
       </Switch>
     </Router>

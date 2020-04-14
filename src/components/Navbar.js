@@ -32,6 +32,9 @@ const Navbar =() => {
             </ReactBootStrap.NavDropdown>
           </ReactBootStrap.Nav>
           <ReactBootStrap.Nav>
+              <Link to="/table-pagination">
+                <ReactBootStrap.Nav.Link href="#deets">Table Pagination</ReactBootStrap.Nav.Link>
+              </Link>
               <Link to="/dankMemes">
                 <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
                 Dank memes
